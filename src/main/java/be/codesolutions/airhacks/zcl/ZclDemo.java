@@ -1,6 +1,6 @@
-package be.codesolutions.airhacks.colored_system_out_logger;
+package be.codesolutions.airhacks.zcl;
 
-public class ColoredSystemOutLoggerDemo {
+public class ZclDemo {
 
     public static void main(String[] args) {
         Log.TRACE.out("Trace message");

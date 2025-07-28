@@ -1,4 +1,4 @@
-package be.codesolutions.airhacks.colored_system_out_logger;
+package be.codesolutions.airhacks.zcl;
 
 import java.io.PrintStream;
 

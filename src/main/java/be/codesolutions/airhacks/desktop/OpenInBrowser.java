@@ -1,4 +1,4 @@
-package be.codesolutions.airhacks.default_browser;
+package be.codesolutions.airhacks.desktop;
 
 import java.awt.*;
 import java.io.IOException;

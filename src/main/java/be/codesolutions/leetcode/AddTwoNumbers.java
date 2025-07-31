@@ -3,8 +3,7 @@ package be.codesolutions.leetcode;
 public class AddTwoNumbers {
 
     public static void main(String[] args) {
-        var addTwoNumbers = new AddTwoNumbers();
-        var result = addTwoNumbers.addTwoNumbers(
+        var result = AddTwoNumbers.addTwoNumbers(
 //                new ListNode(9, new ListNode(4, new ListNode(3, null))),
 //                new ListNode(5, new ListNode(6, new ListNode(4, null))));
                 new ListNode(9, null),
@@ -12,11 +11,11 @@ public class AddTwoNumbers {
         AddTwoNumbers.printListNode(result);
     }
 
-    public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+    public static ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         return calculateRecursive(l1, l2, 0);
     }
 
-    private ListNode calculateRecursive(ListNode l1, ListNode l2, int carry) {
+    private static ListNode calculateRecursive(ListNode l1, ListNode l2, int carry) {
         if (l1 != null || l2 != null || carry != 0) {
             int l1v = l1 == null ? 0 : l1.val;
             int l2v = l2 == null ? 0 : l2.val;

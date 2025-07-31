@@ -7,15 +7,14 @@ import java.util.Map;
 public class TwoSum {
 
     public static void main(String[] args) {
-        TwoSum twoSum = new TwoSum();
-        var result = twoSum.twoSum(new int[]{2, 7, 11, 15}, 9);
+        var result = TwoSum.twoSum(new int[]{2, 7, 11, 15}, 9);
         System.out.println(Arrays.toString(result));
 
-        result = twoSum.twoSumOptimized(new int[]{2, 7, 11, 15}, 9);
+        result = TwoSum.twoSumOptimized(new int[]{2, 7, 11, 15}, 9);
         System.out.println(Arrays.toString(result));
     }
 
-    public int[] twoSum(int[] nums, int target) {
+    public static int[] twoSum(int[] nums, int target) {
 
         for (int i = 0; i < nums.length; i++) {
             for (int j = i + 1; j < nums.length; j++) {
@@ -27,7 +26,7 @@ public class TwoSum {
         return new int[]{};
     }
 
-    public int[] twoSumOptimized(int[] nums, int target) {
+    public static int[] twoSumOptimized(int[] nums, int target) {
         Map<Integer, Integer> map = new HashMap<>();
         for (int i = 0; i < nums.length; i++) {
             map.put(nums[i], i);
